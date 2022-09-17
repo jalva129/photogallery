@@ -9,7 +9,7 @@ h1{
 }
 nav li{
     list-style: none;
-    display: inline-block;
+    display: inline;
     font-size: 20px;
     color: #FFFFFF;
     text-transform: capitalize;
@@ -25,8 +25,11 @@ a:hover {
 }
 
 body{
-    background-color: white;
     width: 1310px;
     margin: 0 auto;
     padding: 16px;
+}
+
+main{
+    background-color: white;
 }
