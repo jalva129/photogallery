@@ -33,3 +33,15 @@ body{
 main{
     background-color: white;
 }
+
+h2.about{
+    text-align: right;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p.about{
+    text-align:right;
+    font-size: 20px;
+}
+
