@@ -6,11 +6,11 @@ h1{
     font-size: 40px;
     color: #007D7B;
 }
-nav {
-    display: inline;
+nav li{
+    display: inline-block;
     font-size: 20px;
     color: #FFFFFF;
-    text-decoration: none;
+    list-style: none;
 }
 a:hover {
     color:#007D7B;
