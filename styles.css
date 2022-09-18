@@ -1,6 +1,6 @@
 html{
     font-family: 'Arial', 'Helvetica', 'sans-serif';
-    background-color: black;
+    background-color: #000000;
 }
 header{
     display: inline-block;
@@ -33,12 +33,18 @@ nav li{
 a{
     text-decoration: none;
     color:#FFFFFF;
-    padding: 50px;
+    margin: 50px;
 }
 
 a:hover {
     color:#007D7B;
 }
+
+a:focus{
+    outline: 3px solid #FFFFFF;
+    color: #007D7B;
+}
+
 [href="#Top"]{
     position: fixed;
     bottom: 0px;
@@ -46,11 +52,17 @@ a:hover {
     background-color:#007D7B;
     padding: 0 10px 0 10px;
     text-align: center;
+    margin: 0;
 }
 
-a:last-child:hover{
+[href="#Top"]:hover{
     background-color:#FFFFFF;
     color:#007D7B;
+}
+[href="#Top"]:focus{
+    background-color:#FFFFFF;
+    color:#007D7B;
+    outline: 3px solid #007D7B;
 }
 
 body{
@@ -59,74 +71,182 @@ body{
 }
 
 main{
-    background-color: white;
-    padding: 16px;
+    background-color: #FFFFFF;
+
 }
 
 .about img{
     float:left;
+    margin: 16px;
 }
 .about {
     text-align: right;
+    padding-right: 16px;
 }
 
 .about h2{
     text-transform: uppercase;
     font-size: 40px;
     margin: 0;
+    padding-top: 16px;
 }
 
 .about p{
     font-size: 20px;
     margin: 0;
+    padding-top: 16px;
 }
 
 .gallery h2{
     text-transform: uppercase;
     font-size: 40px;
     clear: left;
-    margin-bottom: 0;
+    margin: 0;
+    padding-left: 16px;
 }
 
 .gallery p{
     font-size: 20px;
     margin-bottom: 16px;
+    padding-left: 16px;
 }
 
-.gallery figure{
+figure{
     margin: 0;
+}
+
+.fig1{
     float: left;
+    padding-left: 16px;
 }
 
-
-.contact{
-    clear: left;
+.fig2{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+figcaption{
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.blackTopLeft{
+    top: -275px;
+    left: 10px;
 }
 
+.whiteTopLeft{
+    top: -275px;
+    left: 10px;
+    color: #FFFFFF;
+}
+
+.whiteBotRight{
+    right: -300px;
+    top: -30px;
+    color: #FFFFFF;
+}
+
+.figIran{
+    top: -620px;
+    left: 10px;
+}
+
+.figMoab{
+    right: -255px;
+    top: -30px;
+    color: #FFFFFF;
+}
+.figUK{
+    right: -320px;
+    top: -30px;
+    color: #FFFFFF;
+}
+
+.figItaly{
+    left: 10px;
+    top: -30px;
+    color: #FFFFFF;
+}
+
+.figSwitz{
+    left: 10px;
+    top: -30px;
+}
 .contact h2{
+    clear: both;
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    margin: 0;
+    font-size: 40px;
+    padding: 5px;
 }
 
+.contact p{
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+
+}
 section.contact p{
     text-align: center;
     color: #FFFFFF;
 }
 
 form{
-    text-align: center;
+    width: 850px;
+    margin: 0 auto;
 }
 
 form h3{
     visibility: hidden;
     height: 1px;
+    margin: 0;
 }
 
 form label{
     font-size: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+}
+
+input{
+    width: 850px;
+    height: 16px;
+    padding: 6px;
+}
+
+input:focus{
+    outline: 3px solid #007D7B;
+}
+input::placeholder{
+    font-size: 16px;
+    color:#007D7B;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button{
+    text-align: center;
+    background-color: #007D7B;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    width: 400px;
+    position: relative;
+    left: 25%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:active{
+    background-color: #FFFFFF;
+    color: #007D7B;
 }
 
 footer{
