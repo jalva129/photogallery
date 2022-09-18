@@ -13,6 +13,7 @@ nav li{
     font-size: 20px;
     color: #FFFFFF;
     text-transform: capitalize;
+    padding: 10px;
 }
 
 a{
@@ -27,11 +28,11 @@ a:hover {
 body{
     width: 1310px;
     margin: 0 auto;
-    padding: 16px;
 }
 
 main{
     background-color: white;
+    padding: 16px;
 }
 
 h2.about{
